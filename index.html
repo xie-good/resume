@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>谢勤光 · 在线简历 | Python 后端 / AI 应用开发</title>
+<meta name="description" content="谢勤光（Qinguang Xie）在线简历——2027 届本科毕业生，Python 后端 / AI 应用开发 / Agent 开发方向，base 深圳/广州。">
+<style>
+  :root {
+    --bg: #0d1117; --card: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --accent: #58a6ff; --accent2: #bc8cff;
+    --tag-bg: #21262d;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height: 1.65;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 56px 24px 72px; }
+
+  .top { display: flex; gap: 24px; align-items: center; margin-bottom: 36px; flex-wrap: wrap; }
+  .avatar { width: 108px; height: 108px; border-radius: 50%; border: 3px solid var(--border); }
+  h1 { font-size: 30px; font-weight: 700; letter-spacing: .5px; }
+  h1 span {
+    background: linear-gradient(120deg, var(--accent), var(--accent2));
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .role { color: var(--accent); font-size: 15px; margin: 6px 0 4px; font-weight: 600; }
+  .meta { color: var(--muted); font-size: 14px; }
+  .contact { margin-top: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip {
+    background: var(--tag-bg); border: 1px solid var(--border); border-radius: 999px;
+    padding: 3px 12px; font-size: 13px; color: var(--muted); text-decoration: none;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+  h2 {
+    font-size: 19px; font-weight: 600; margin: 40px 0 16px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  h2::before { content: ""; width: 4px; height: 18px; border-radius: 2px;
+    background: linear-gradient(180deg, var(--accent), var(--accent2)); }
+
+  .timeline { border-left: 2px solid var(--border); padding-left: 20px; display: grid; gap: 18px; }
+  .t-item { position: relative; }
+  .t-item::before { content: ""; position: absolute; left: -26px; top: 7px;
+    width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+  .t-head { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+  .t-title { font-weight: 600; font-size: 15px; }
+  .t-time { color: var(--muted); font-size: 13px; }
+  .t-org { color: var(--accent); font-size: 14px; margin: 2px 0; }
+  .t-desc { color: var(--muted); font-size: 14px; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .skill {
+    background: var(--tag-bg); border: 1px solid var(--border); border-radius: 8px;
+    padding: 6px 14px; font-size: 13px; color: var(--text);
+  }
+  .skill b { color: var(--accent); font-weight: 600; }
+
+  .proj { display: grid; gap: 14px; }
+  .p-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; }
+  .p-card:hover { border-color: var(--accent); }
+  .p-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .p-name { font-weight: 600; font-size: 15px; }
+  .p-name a { color: var(--text); text-decoration: none; }
+  .p-name a:hover { color: var(--accent); }
+  .p-link { color: var(--muted); font-size: 13px; text-decoration: none; }
+  .p-link:hover { color: var(--accent); }
+  .p-desc { color: var(--muted); font-size: 14px; margin: 6px 0 8px; }
+  .p-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .p-tag { color: var(--accent2); font-size: 12px; font-family: ui-monospace, Consolas, monospace;
+    background: var(--tag-bg); border-radius: 5px; padding: 2px 8px; }
+
+  .edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+  .edu-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; }
+  .edu-card .big { font-weight: 600; font-size: 15px; }
+  .edu-card .sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
+
+  footer { margin-top: 60px; border-top: 1px solid var(--border); padding-top: 24px;
+    text-align: center; color: var(--muted); font-size: 13px; }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  @media print {
+    body { background: #fff; color: #111; }
+    .wrap { max-width: 100%; padding: 20px; }
+    .p-card, .edu-card { border-color: #ddd; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <img class="avatar" src="https://github.com/xie-good.png" alt="谢勤光">
+    <div>
+      <h1>谢勤光 <span>Qinguang Xie</span></h1>
+      <p class="role">Python 后端 / AI 应用开发 / Agent 开发</p>
+      <p class="meta">2027 届本科毕业生 · base 深圳 / 广州</p>
+      <div class="contact">
+        <a class="chip" href="mailto:1269105168@qq.com">📮 1269105168@qq.com</a>
+        <a class="chip" href="https://github.com/xie-good" target="_blank" rel="noopener">GitHub · xie-good</a>
+        <a class="chip" href="https://lx1120.is-a.dev/" target="_blank" rel="noopener">🌐 作品集</a>
+        <a class="chip" href="https://lx1120.thedev.id/" target="_blank" rel="noopener">🧭 项目导航</a>
+      </div>
+    </div>
+  </div>
+
+  <h2>💼 工作 / 实践经历</h2>
+  <div class="timeline">
+    <div class="t-item">
+      <div class="t-head">
+        <span class="t-title">QA 测试工程师</span>
+        <span class="t-time">在职</span>
+      </div>
+      <p class="t-org">法大大 FADADA · SaaS 电子合同平台</p>
+      <p class="t-desc">负责 SIT / 生产云环境测试：签署任务协作成员角色权限矩阵验证、模板与审批流、批量合同导入、工作转交等核心链路；基于 TAPD 需求管理用例（P0/P1/P2 分层），推进接口自动化测试（pytest），并以 XMind 结构化设计可追溯用例集。</p>
+    </div>
+  </div>
+
+  <h2>🚀 项目经历</h2>
+  <div class="proj">
+    <div class="p-card">
+      <div class="p-head">
+        <span class="p-name"><a href="https://github.com/xie-good/Agent-commerce" target="_blank" rel="noopener">Agent-commerce · 电商智能体平台</a></span>
+        <a class="p-link" href="https://github.com/xie-good/Agent-commerce" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="p-desc">基于 DashScope LLM 的电商智能体系统：商品推荐、下单流程与智能客服多环节 Agent 协作，前后端完整实现。</p>
+      <div class="p-tags"><span class="p-tag">Python</span><span class="p-tag">DashScope</span><span class="p-tag">Agent</span><span class="p-tag">FastAPI</span></div>
+    </div>
+    <div class="p-card">
+      <div class="p-head">
+        <span class="p-name"><a href="https://github.com/xie-good/hello-agnets" target="_blank" rel="noopener">hello-agnets · Agent 范式实验场</a></span>
+        <a class="p-link" href="https://github.com/xie-good/hello-agnets" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="p-desc">实现 ReAct / Reflection / Plan-and-Solve 三大 Agent 范式，包含 AgentScope 多智能体狼人杀 Demo，作为 AI Agent 学习主线项目。</p>
+      <div class="p-tags"><span class="p-tag">AgentScope</span><span class="p-tag">ReAct</span><span class="p-tag">Multi-Agent</span><span class="p-tag">LLM</span></div>
+    </div>
+    <div class="p-card">
+      <div class="p-head">
+        <span class="p-name"><a href="https://github.com/xie-good/xianyu-agent" target="_blank" rel="noopener">xianyu-agent · 闲鱼智能客服</a></span>
+        <a class="p-link" href="https://github.com/xie-good/xianyu-agent" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="p-desc">闲鱼平台 AI 客服机器人：自动应答议价与咨询消息，深入研究 MessagePack 协议解码与性能优化。</p>
+      <div class="p-tags"><span class="p-tag">Python</span><span class="p-tag">MessagePack</span><span class="p-tag">自动化</span></div>
+    </div>
+    <div class="p-card">
+      <div class="p-head">
+        <span class="p-name">秋招通 · 招聘信息聚合系统</span>
+        <span class="p-link">FastAPI + SQLite</span>
+      </div>
+      <p class="p-desc">自动聚合校招职位信息（企业官网为主、牛客/应届生为辅），提供结构化检索与订阅，服务于个人秋招信息流。</p>
+      <div class="p-tags"><span class="p-tag">FastAPI</span><span class="p-tag">SQLite</span><span class="p-tag">爬虫</span></div>
+    </div>
+  </div>
+
+  <h2>🛠 技能栈</h2>
+  <div class="skills">
+    <span class="skill"><b>语言</b> · Python / C / SQL</span>
+    <span class="skill"><b>后端</b> · FastAPI / Flask</span>
+    <span class="skill"><b>数据库</b> · MySQL / SQLite</span>
+    <span class="skill"><b>AI</b> · LLM 应用 / RAG / LangGraph</span>
+    <span class="skill"><b>Agent</b> · AgentScope / 多智能体协作</span>
+    <span class="skill"><b>测试</b> · pytest 接口自动化 / SIT 流程</span>
+    <span class="skill"><b>工具</b> · Git / Linux / mitmproxy</span>
+  </div>
+
+  <h2>🎓 教育</h2>
+  <div class="edu-grid">
+    <div class="edu-card">
+      <p class="big">广州南方学院 · 本科</p>
+      <p class="sub">2027 届毕业生（专升本）</p>
+      <p class="sub">方向：Python 后端 / AI 应用开发</p>
+    </div>
+    <div class="edu-card">
+      <p class="big">兴趣方向</p>
+      <p class="sub">AI Agents · 多智能体协作 · RAG</p>
+      <p class="sub">LangGraph 工作流 · AgentScope 框架</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 谢勤光 Qinguang Xie ·
+      <a href="https://github.com/xie-good" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://lx1120.is-a.dev/" target="_blank" rel="noopener">作品集</a> ·
+      <a href="https://lx1120.thedev.id/" target="_blank" rel="noopener">项目导航</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
